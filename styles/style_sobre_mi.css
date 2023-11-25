@@ -1,0 +1,320 @@
+
+header {
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-me {
+    text-align: center;
+    
+}
+
+.about-me img {
+    border-radius: 50%;
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    flex: 1;
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.creative-element {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+.sobre_mi_a {
+    
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+header {
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.nombre{
+    text-align: center;
+}
+.about-me {
+    text-align: justify;
+    animation: fadeIn2 0.5s;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Opacidad inicial (invisible) */
+    }
+    to {
+        opacity: 1; /* Opacidad final (completamente visible) */
+    }
+}
+
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    flex: 1;
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+.habilidades{
+    text-align: center;
+}
+.skills {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.creative-element {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.ciclismo_T{
+    text-align: center;
+}
+.descripcion_C{
+    text-align: justify;
+}
+.contact {
+    
+    margin-top: 50px;
+}
+
+.img_s{
+border-radius: 25px;
+
+
+    
+}
+.custom-slider-container {
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+    margin-left: 635px;
+    animation: fadeIn 2s;
+}
+
+@media (max-width: 1200px) {
+    .custom-slider-container {
+        margin-left: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .custom-slider-container {
+        margin-left: 20px;
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    }
+}
+.custom-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.custom-slide {
+    flex: 0 0 100%; /* Ancho de cada slide */
+}
+
+
+
+.custom-slider-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+        /* Estilos para las secciones con animación al deslizar */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px); /* Deslizar hacia abajo */
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+.img_s{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    }
+.img-m{
+    flex: 1;
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+/* Estilo para el slider_ciclismo */
+.slider_ciclismo {
+    width: 550px; /* Ancho del slider */
+    margin: 20px auto; /* Centrar el slider */
+    margin-bottom: 50px;
+ }
+ 
+ .slider_ciclismo img {
+    width: 100%; /* Asegurar que las imágenes ocupen el ancho completo del contenedor */
+    height: 650px; /* Mantener la proporción original de la imagen */
+    border-radius: 10px; /* Esquinas redondeadas para las imágenes */
+ }
+ 
+ /* Estilo para los puntos de navegación (dots) */
+ .slick-dots {
+    bottom: 20px; /* Ajustar la posición vertical de los puntos */
+ }
+ 
+ .slick-dots li {
+    margin: 0 5px; /* Espacio entre los puntos */
+ }
+ 
+ .slick-dots li button {
+    font-size: 14px; /* Tamaño del texto de los puntos */
+ }
+ 
+ .slider_habilidades-container {
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider_habilidades {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider_habilidades .custom-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+.slider_habilidades .custom-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slider_habilidades .custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(100%);
+    transition: opacity 0.5s, transform 0.5s;
+    border-radius: 8px;
+}
+
+.slider_habilidades .custom-overlay p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.slider_habilidades .custom-slide:hover .custom-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slider_habilidades .custom-prev, .slider_habilidades .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.slider_habilidades .custom-prev {
+    left: 10px;
+}
+
+.slider_habilidades .custom-next {
+    right: 10px;
+}

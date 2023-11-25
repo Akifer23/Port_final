@@ -1,0 +1,49 @@
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.img_cv{
+    animation: fadeIn 2s;
+    margin-top: 30px;
+    width: 900px;
+    height: 1100px;
+    
+}
+
+#download-button {
+    background-color: #18125a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeIn 2s;
+}
+
+#download-button:hover {
+    background-color: #1b3f1d;
+}
+.icono-c {
+    height: 80px;
+    width: 100px;
+    margin-right: 5px;
+}
+@media (max-width: 768px) {
+    .custom-slider-container {
+        margin-left: 10px; /* Ajusta el margen izquierdo según tus necesidades */
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        overflow: hidden; /* Evita que el contenido se desborde en pantallas pequeñas */
+    }
+}

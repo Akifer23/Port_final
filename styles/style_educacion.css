@@ -1,0 +1,140 @@
+    .education-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .education-card {
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 25px;
+  }
+  
+  .education-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .education-content {
+    padding: 20px;
+  }
+  
+  .education-card h3 {
+    color: #007BFF;
+  }
+  
+  .education-card p {
+    color: #555;
+  }
+  
+  .education-card span {
+    font-weight: bold;
+  }
+  
+  .education-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    opacity: 0; /* Inicialmente, las cards son transparentes */
+    animation: fadeIn 1.5s ease-out forwards; /* Agregamos una animación fadeIn */
+  }
+  
+  .education-card {
+    max-width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0; /* Inicialmente, las cards son transparentes */
+    transform: translateY(20px); /* Desplazamiento hacia abajo para una apariencia más suave */
+    animation: cardAppear 1s ease-out forwards; /* Agregamos una animación para cada card */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* Al final de la animación, las cards son completamente visibles */
+    }
+  }
+  
+  @keyframes cardAppear {
+    to {
+      opacity: 1; /* Al final de la animación, la card es completamente visible */
+      transform: translateY(0); /* Al final de la animación, la card vuelve a su posición original */
+    }
+  }
+  /* Estilos para el carrusel */
+.image-slider {
+    margin-left: 380px;
+    
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .slider-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center; /* Centra la imagen en el contenedor */
+  }
+  
+
+  /* Estilos para los botones de control del slider */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-size: 20px;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  .icono-s{
+    width: 100px;
+    margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+    
+}
+
+@media (max-width: 768px) {
+  .education-cards {
+    flex-direction: column; /* Cambia a una disposición de columna en pantallas pequeñas */
+    align-items: center; /* Centra las cards en pantallas pequeñas */
+  }
+
+  .education-card {
+    max-width: 100%; /* Hace que las cards ocupen el ancho completo en pantallas pequeñas */
+  }
+
+  .image-slider {
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+  }
+  
+  .slider-container {
+    border-radius: 0; /* Elimina el radio de borde en pantallas pequeñas */
+  }
+  
+  .prev,
+  .next {
+    top: 45%; /* Ajusta la posición vertical de los botones de control */
+  }
+}
