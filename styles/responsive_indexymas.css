@@ -1,0 +1,21 @@
+/* Ejemplo de media query para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas aquí */
+    .container {
+        flex-direction: column;
+    }
+
+    .image {
+        margin-bottom: 20px;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .navbar {
+        font-size: 18px;
+    }
+
+    /* Otros estilos específicos para pantallas pequeñas */
+}
