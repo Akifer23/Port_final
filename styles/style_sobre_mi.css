@@ -1,0 +1,127 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Secciones */
+section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Imágenes pequeñas */
+.img_s {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Acerca de mí */
+.about-me {
+    text-align: justify;
+    animation: fadeIn2 0.5s;
+}
+
+/* Proyectos */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    flex: 0 0 calc(30% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+/* Habilidades */
+.skills {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+/* Elemento creativo */
+.creative-element {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* Contacto */
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Slider Ciclismo */
+.slider_ciclismo {
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider_ciclismo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Slider Habilidades */
+.slider_habilidades-container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider_habilidades .custom-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Media Queries */
+@media (min-width: 769px) {
+    /* Centrar la imagen y hacerla un poco más pequeña en pantallas más grandes */
+    .img_s {
+        max-width: 30%; /* Ajusta según tus preferencias */
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+
+    .project-card {
+        flex: 0 0 100%;
+    }
+
+    .slider_ciclismo,
+    .slider_habilidades-container {
+        width: 90%;
+    }
+}

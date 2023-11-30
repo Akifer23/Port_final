@@ -1,0 +1,117 @@
+/* Estilos generales para la barra de navegación */
+.navbar {
+  overflow: hidden;
+  background-color: #1f2a49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ddd;
+  position: relative;
+  width: 100%;
+  top: -50px;
+  transition: top 0.8s;
+  opacity: 85%;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para los enlaces en la barra de navegación */
+.navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 15px;
+}
+
+/* Estilos para el hover en los enlaces */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Estilos para el centro de la barra de navegación */
+.navbar .center {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Estilos para la barra lateral (menú desplegable) */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+/* Estilos para los enlaces en la barra lateral */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Estilos para el hover en los enlaces de la barra lateral */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Estilos para el botón de cerrar la barra lateral */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Estilos para el botón de abrir la barra lateral */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+/* Estilos para el hover en el botón de abrir la barra lateral */
+.openbtn:hover {
+  background-color: #444;
+  border-radius: 40px;
+}
+
+/* Estilos para el área principal */
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+  .navbar {
+      flex-direction: column;
+  }
+
+  .navbar .center {
+      order: 3;
+  }
+
+  .sidebar {
+      padding-top: 80px;
+  }
+
+  .sidebar a {
+      font-size: 20px;
+  }
+}
