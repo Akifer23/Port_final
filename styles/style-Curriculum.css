@@ -9,7 +9,7 @@
     }
 }
 
-/* Estilos de la imagen y el botón */
+
 .img_cv {
     animation: fadeIn 2s;
     margin-top: 30px;
@@ -31,7 +31,7 @@
     transition: background-color 0.3s;
     animation: fadeIn 2s;
     margin-top: 20px;
-    width: 100%; /* Ajuste para evitar desplazamientos horizontales en dispositivos móviles */
+    width: 100%; 
 }
 
 #download-button:hover {
@@ -44,7 +44,7 @@
     margin-right: 5px;
 }
 
-/* Estilos para vista responsiva */
+
 @media (max-width: 768px) {
     .img_cv {
         max-width: 100%;
@@ -53,11 +53,11 @@
 
     #download-button {
         width: 100%;
-        box-sizing: border-box; /* Asegura que el ancho del botón incluye padding y border */
+        box-sizing: border-box; 
         margin-top: 20px;
     }
 
-    /* Contenedor flex para centrar la imagen y el botón */
+   
     .flex-container {
         display: flex;
         flex-direction: column;
@@ -65,7 +65,7 @@
         text-align: center;
     }
 
-    /* Elimina el margen en el body */
+    
     body {
         margin: 0;
     }
