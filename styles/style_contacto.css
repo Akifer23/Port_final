@@ -5,7 +5,7 @@
 }
 
 .container {
-    margin: auto; /* Cambiado de "margin: 0 auto;" a "margin: auto;" */
+    margin: auto; 
     max-width: 400px;
     width: 90%;
     padding: 30px;
@@ -35,8 +35,8 @@ input, textarea {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 100%; /* Ajustado para ocupar el ancho completo */
-    box-sizing: border-box; /* Para incluir el padding en el ancho total */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 button {
@@ -64,7 +64,7 @@ input:hover {
     }
 }
 
-/* ... (tu código CSS existente) */
+
 
 @keyframes flipAnimation {
     0% {
@@ -79,10 +79,10 @@ input:hover {
 }
 
 .flip {
-    animation: flipAnimation 3s ease-in-out; /* ajusta la duración según tus necesidades */
+    animation: flipAnimation 3s ease-in-out; 
 }
 
-/* Media Query para pantallas más pequeñas */
+
 @media (max-width: 768px) {
     .container {
         padding: 20px;
