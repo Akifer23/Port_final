@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/nav-style.css">
+    <link rel="stylesheet" href="../styles/style_proyectos.css">
+    <title>Portafolio web</title>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="/index.html">Inicio</a>
+        <a href="/html/sobre_mi.html">Sobre mí</a>
+        <a href="/html/curriculum.html">Curriculum</a>
+        <a href="/html/proyectos.html">Proyectos</a>
+        
+        <a href="/html/Experiencia_Laboral.html">Experiencia Laboral</a>
+        <a href="/html/educacion.html">Educacion</a>
+        
+        <a href="/html/contacto.html">Contacto</a>
+        
+        
+    </div>
+      
+    <div id="main">
+        <div class="navbar" id="navbar">
+            <a class="openbtn" onclick="openNav()"><strong>☰</strong></a>  
+            <div class="center"><div class="experiencia">
+                <img src="../img/image-removebg-preview (7).png" alt="" class="icono-m">
+                <h1>Proyectos</h1>
+            </div></div>
+        </div>
+    </div>
+    <div class="fade-in" id="project-container">
+        <div class="project-card" id="project1">
+            <div class="project-side front">
+                <img src="../img/collage1_mol.jpg" alt="Proyecto 1">
+            </div>
+            <div class="project-side back">
+                <div class="project-description">
+                    <p>El molcajete es una página web dinámica que ofrece una variedad de platillos deliciosos y nutritivos para todos los gustos y ocasiones. Los usuarios pueden registrarse o iniciar sesión en la página web para acceder a las diferentes opciones y servicios que ofrece. 
+                        Pueden explorar el catálogo de platillos, que cuenta con animaciones, imágenes, precios y descripciones de cada uno. 
+                        También pueden ver las especialidades de la casa en un slider que muestra los platillos más populares y recomendados.
+                         Los usuarios pueden agregar los platillos que deseen al carrito de compras, donde pueden ver el detalle y el total de su pedido. 
+                         Una vez que estén listos para comprar, pueden confirmar su pedido y recibir una notificación de confirmación.
+                          
+                          </p>
+                          
+                </div>
+            </div>
+            <button class="toggle-button" onclick="toggleDescription('project1')">Voltear</button>
+        </div>
+
+        <div class="project-card" id="project2">
+            <div class="project-side front">
+                <img src="../img/collage4_g.jpg" alt="Proyecto 1">
+                    
+                  </video>
+            </div>
+            <div class="project-side back">
+                <div class="project-description">
+                    <p>Mi Grúa de Arduino es un proyecto que consiste en construir y programar una grúa con materiales reciclados y un Arduino. 
+                        La grúa tiene una pinza que puede abrirse y cerrarse para agarrar objetos, y un brazo que puede moverse en cuatro direcciones
+                        : izquierda, derecha, arriba y abajo. La grúa se controla con un joystick HP y dos botones, que se conectan al Arduino mediante cables. 
+                        El joystick tiene dos ejes: el eje X y el eje Y. El eje X se usa para mover el brazo de la grúa hacia la izquierda o la derecha, y el eje Y se usa para mover el brazo hacia arriba o abajo.
+                         Los dos botones se usan para abrir y cerrar la pinza de la grúa.
+                         El proyecto se realizó con Arduino, un joystick HP, dos botones, cables, palitos de madera y papel cascarón.</p>
+                </div>
+            </div>
+            <button class="toggle-button" onclick="toggleDescription('project2')">Voltear</button>
+        </div>
+
+        <div class="project-card" id="project3">
+            <div class="project-side front">
+                <img src="../img/collage2_sis.jpg" alt="Proyecto 3">
+            </div>
+            <div class="project-side back">
+                <div class="project-description">
+                    <p> Sistema de Inventario es un proyecto que consiste en desarrollar y programar una aplicación web y móvil que permite gestionar el inventario de productos, 
+                        los usuarios y las compras. La aplicación usa Cordova para crear una interfaz multiplataforma que se adapta 
+                        a diferentes dispositivos y navegadores. La aplicación usa Web SQL para almacenar y manipular los datos de los productos,
+                         los usuarios y las compras. La aplicación permite ingresar productos, cantidades y precios a una tabla, donde se puede 
+                         ver el detalle y el total del inventario. La aplicación también permite crear usuarios y asignarles una cantidad de crédito,
+                          que se les descuenta en base al precio del producto que compran. La aplicación también permite ver el historial de compras de cada usuario y el saldo de su crédito.</p>
+                </div>
+            </div>
+            <button class="toggle-button" onclick="toggleDescription('project3')">Voltear</button>
+        </div>
+
+        <div class="project-card" id="project4">
+            <div class="project-side front">
+                <img src="../img/collage3_v.jpg" alt="Proyecto 4">
+            </div>
+            <div class="project-side back">
+                <div class="project-description">
+                    <p>Hacienda Belmont es un videojuego de aventura y acción, que se desarrolla en un mundo fantástico y misterioso.
+                         El jugador asume el rol de Alex Turner, un joven valiente y curioso, que se ve envuelto en una trama de intrigas y peligros,
+                          cuando descubre que su padre es en realidad Belmont, el villano más temido y poderoso del reino. Alex tendrá que enfrentarse 
+                          a samuel Belmont, explorar diferentes escenarios,recolectar objetos para descubrir los secretos de su origen y El videojuego cuenta con una historia envolvente,
+                            unos personajes carismáticos, una música ambiental, un menú de opciones y un gameplay con mecánicas variadas, 
+                            interacción con el entorno y objetivos claros.</p>
+                </div>
+            </div>
+            <button class="toggle-button" onclick="toggleDescription('project4')">Voltear</button>
+        </div>
+
+        <div class="project-card" id="project5">
+            <div class="project-side front">
+                <img src="../img/collage3_ctrol.jpg" alt="Proyecto 5">
+            </div>
+            <div class="project-side back">
+                <div class="project-description">
+                    <p>Mi Sistema de Control de Activos es un sistema que permite registrar, asignar, modificar y eliminar los activos de una organización,
+                         así como los usuarios que los utilizan. El sistema se conecta a una base de datos PHPMyAdmin, donde se almacenan y 
+                         consultan los datos de los activos, los usuarios y las asignaciones. El sistema tiene una interfaz gráfica con un 
+                         bonito diseño, que facilita el uso y la navegación. El sistema permite realizar las siguientes operaciones
+                        
+                         Registrar usuarios: se puede ingresar el nombre, el correo, el rol y la contraseña de cada usuario, y se genera un identificador único para cada uno.
+                         Registrar productos: se puede ingresar el nombre, la descripción, el tipo, el estado y el valor de cada producto
+                         
+                        </p>
+
+                </div>
+            </div>
+            <button class="toggle-button" onclick="toggleDescription('project5')">Voltear</button>
+        </div>
+
+        
+    </div>
+
+
+</body>
+<script src="/js/script.js"></script>
+<script src="../js/script_proyectos.js"></script>
+</html>

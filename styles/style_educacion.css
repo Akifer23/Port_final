@@ -1,0 +1,121 @@
+/* Estilos para las cards de educación */
+.education-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.education-card {
+  flex: 1;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: cardAppear 1s ease-out forwards;
+  border-radius: 25px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cardAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilos para el carrusel */
+/* Estilos para el carrusel */
+.image-slider {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%; /* Ajusta el ancho al 100% */
+  box-sizing: border-box; /* Asegura que el ancho incluya el padding y el borde */
+  padding: 0 15px; /* Agrega un poco de relleno a los lados según sea necesario */
+}
+
+/* ... (Otros estilos del carrusel) ... */
+
+
+.slider-container {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  margin-left: 50px;/* Ajusta el margen izquierdo según tus preferencias */
+}
+
+.slide {
+  margin-right: 50px;
+  display: none;
+  text-align: center;
+}
+
+/* Estilos para los botones de control del slider */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-size: 20px;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  outline: none;
+  margin-right: 50px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.icono-s {
+  width: 100px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .education-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .education-card {
+    max-width: 100%;
+  }
+
+  .image-slider {
+    margin: 0; /* Elimina el margen izquierdo */
+  }
+
+  .slider-container {
+    border-radius: 0;
+  }
+
+  .prev,
+  .next {
+    top: 45%;
+  }
+  
+  .slide {
+    margin-right: 0;
+  }
+}

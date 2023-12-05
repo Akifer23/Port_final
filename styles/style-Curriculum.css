@@ -1,0 +1,72 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos de la imagen y el botón */
+.img_cv {
+    animation: fadeIn 2s;
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+#download-button {
+    background-color: #18125a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    animation: fadeIn 2s;
+    margin-top: 20px;
+    width: 100%; /* Ajuste para evitar desplazamientos horizontales en dispositivos móviles */
+}
+
+#download-button:hover {
+    background-color: #1b3f1d;
+}
+
+.icono-c {
+    height: 80px;
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Estilos para vista responsiva */
+@media (max-width: 768px) {
+    .img_cv {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #download-button {
+        width: 100%;
+        box-sizing: border-box; /* Asegura que el ancho del botón incluye padding y border */
+        margin-top: 20px;
+    }
+
+    /* Contenedor flex para centrar la imagen y el botón */
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Elimina el margen en el body */
+    body {
+        margin: 0;
+    }
+}
