@@ -13,7 +13,7 @@ document.getElementById('form')
       .then(() => {
         btn.value = 'Send Email';
         alert('mensaje enviado con ecito :)!');
-        document.getElementById('form').reset(); // Limpiar el formulario
+        document.getElementById('form').reset(); 
       }, (err) => {
         btn.value = 'Send Email';
         alert(JSON.stringify(err));
@@ -22,7 +22,7 @@ document.getElementById('form')
 
 let form = document.getElementById('container');
 let idleTime = 0;
-const idleInterval = 1000; // 1 segundo
+const idleInterval = 1000; 
 
 function resetIdleTime() {
     idleTime = 0;
@@ -30,11 +30,11 @@ function resetIdleTime() {
 
 function checkIdleTime() {
     idleTime += 1;
-    if (idleTime > 60) { // Cambia el valor según la cantidad de segundos que deseas para la inactividad
+    if (idleTime > 60) { 
         form.classList.add('flip');
         setTimeout(() => {
             form.classList.remove('flip');
-        }, 3000); // Ajusta el tiempo de la animación de vuelta (3 segundos en este ejemplo)
+        }, 3000); 
         resetIdleTime();
     }
 }
