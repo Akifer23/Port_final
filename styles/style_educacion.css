@@ -1,4 +1,4 @@
-/* Estilos para las cards de educación */
+
 .education-cards {
   display: flex;
   flex-wrap: wrap;
@@ -33,18 +33,18 @@
   }
 }
 
-/* Estilos para el carrusel */
-/* Estilos para el carrusel */
+
+
 .image-slider {
   margin: 0 auto;
   margin-bottom: 15px;
   text-align: center;
-  width: 100%; /* Ajusta el ancho al 100% */
-  box-sizing: border-box; /* Asegura que el ancho incluya el padding y el borde */
-  padding: 0 15px; /* Agrega un poco de relleno a los lados según sea necesario */
+  width: 100%; 
+  box-sizing: border-box; 
+  padding: 0 15px; 
 }
 
-/* ... (Otros estilos del carrusel) ... */
+
 
 
 .slider-container {
@@ -52,7 +52,7 @@
   overflow: hidden;
   position: relative;
   border-radius: 15px;
-  margin-left: 50px;/* Ajusta el margen izquierdo según tus preferencias */
+  margin-left: 50px;
 }
 
 .slide {
@@ -61,7 +61,7 @@
   text-align: center;
 }
 
-/* Estilos para los botones de control del slider */
+
 .prev,
 .next {
   cursor: pointer;
@@ -103,7 +103,7 @@
   }
 
   .image-slider {
-    margin: 0; /* Elimina el margen izquierdo */
+    margin: 0; 
   }
 
   .slider-container {
