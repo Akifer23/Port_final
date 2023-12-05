@@ -1,10 +1,10 @@
-/* General */
+
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
 }
 
-/* Header */
+
 header {
     background-color: #4285f4;
     color: #fff;
@@ -12,7 +12,7 @@ header {
     padding: 20px;
 }
 
-/* Secciones */
+
 section {
     width: 90%;
     max-width: 1200px;
@@ -24,21 +24,21 @@ section {
     box-sizing: border-box;
 }
 
-/* Imágenes pequeñas */
+
 .img_s {
     width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* Centra la imagen horizontalmente */
+    margin: 0 auto; 
 }
 
-/* Acerca de mí */
+
 .about-me {
     text-align: justify;
     animation: fadeIn2 0.5s;
 }
 
-/* Proyectos */
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +46,7 @@ section {
 }
 
 .project-card {
-    flex: 0 0 calc(100% - 15px); /* Ocupa el 100% del ancho con márgenes a ambos lados */
+    flex: 0 0 calc(100% - 15px); 
     margin: 10px;
     background-color: #f9f9f9;
     padding: 15px;
@@ -55,26 +55,26 @@ section {
     text-align: justify;
 }
 
-/* Habilidades */
+
 .skills {
     text-align: justify;
     margin-top: 30px;
 }
 
-/* Elemento creativo */
+
 .creative-element {
     margin-top: 50px;
     margin-bottom: 70px;
     text-align: center;
 }
 
-/* Contacto */
+
 .contact {
     text-align: center;
     margin-top: 50px;
 }
 
-/* Slider Ciclismo */
+
 .slider_ciclismo {
     width: 100%;
     margin: 20px auto;
@@ -88,7 +88,7 @@ section {
     display: block;
 }
 
-/* Slider Habilidades */
+
 .slider_habilidades-container {
     width: 100%;
     margin: auto;
@@ -103,11 +103,11 @@ section {
     position: relative;
 }
 
-/* Media Queries */
+
 @media (min-width: 769px) {
-    /* Centrar la imagen y hacerla un poco más pequeña en pantallas más grandes */
+    
     .img_s {
-        max-width: 30%; /* Ajusta según tus preferencias */
+        max-width: 30%; 
     }
 }
 
@@ -117,7 +117,7 @@ section {
     }
 
     .project-card {
-        flex: 0 0 calc(100% - 20px); /* Ocupa el 100% del ancho con márgenes a ambos lados */
+        flex: 0 0 calc(100% - 20px); 
         margin: 10px;
     }
 
