@@ -1,4 +1,4 @@
-/* Estilos generales para la barra de navegación */
+
 .navbar {
   overflow: hidden;
   background-color: #1f2a49;
@@ -15,7 +15,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Estilos para los enlaces en la barra de navegación */
+
 .navbar a {
   color: #f2f2f2;
   text-align: center;
@@ -26,19 +26,19 @@
   margin: 15px;
 }
 
-/* Estilos para el hover en los enlaces */
+
 .navbar a:hover {
   background: #ddd;
   color: black;
 }
 
-/* Estilos para el centro de la barra de navegación */
+
 .navbar .center {
   flex-grow: 1;
   text-align: center;
 }
 
-/* Estilos para la barra lateral (menú desplegable) */
+
 .sidebar {
   height: 100%;
   width: 0;
@@ -52,7 +52,7 @@
   padding-top: 60px;
 }
 
-/* Estilos para los enlaces en la barra lateral */
+
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -62,12 +62,12 @@
   transition: 0.3s;
 }
 
-/* Estilos para el hover en los enlaces de la barra lateral */
+
 .sidebar a:hover {
   color: #f1f1f1;
 }
 
-/* Estilos para el botón de cerrar la barra lateral */
+
 .sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -76,7 +76,7 @@
   margin-left: 50px;
 }
 
-/* Estilos para el botón de abrir la barra lateral */
+
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -85,19 +85,19 @@
   border: none;
 }
 
-/* Estilos para el hover en el botón de abrir la barra lateral */
+
 .openbtn:hover {
   background-color: #444;
   border-radius: 40px;
 }
 
-/* Estilos para el área principal */
+
 #main {
   transition: margin-left .5s;
   padding: 16px;
 }
 
-/* Media Query para pantallas más pequeñas */
+
 @media only screen and (max-width: 600px) {
   .navbar {
       flex-direction: column;
