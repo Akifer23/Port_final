@@ -15,7 +15,7 @@ function showCustomSlides() {
   }
 
   customSlides[customSlideIndex - 1].style.display = "block";
-  setTimeout(showCustomSlides, 9000); // Cambia la imagen cada 3 segundos (ajustable)
+  setTimeout(showCustomSlides, 9000); 
 }
 
 function customChangeSlide(n) {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", showCustomSlides);
     });
 });
 
-// Función para verificar si un elemento está en la ventana gráfica
+
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
